@@ -2,8 +2,8 @@
 --- Sans effet si pn-lib n'est pas installé. Les valeurs sont lues à l'usage : les changements sont appliqués en direct.
 local FIELDS = {
     { source = 'config.server', key = 'vehicle', label = 'Véhicule de service', description = 'Modèle du camion de ramassage', valueType = 'string' },
-    { source = 'config.server', key = 'minStops', label = 'Arrêts minimum', valueType = 'number', min = 1, max = 50 },
-    { source = 'config.server', key = 'minBagsPerStop', label = 'Sacs min. par arrêt', valueType = 'number', min = 1, max = 50 },
+    { source = 'config.server', key = 'minStops', label = 'Arrêts minimum', description = 'Nombre d\'arrêts minimum par tournée', valueType = 'number', min = 1, max = 50 },
+    { source = 'config.server', key = 'minBagsPerStop', label = 'Sacs min. par arrêt', description = 'Doit rester inférieur ou égal au maximum', valueType = 'number', min = 1, max = 50 },
     { source = 'config.server', key = 'maxBagsPerStop', label = 'Sacs max. par arrêt', valueType = 'number', min = 1, max = 50 },
     { source = 'config.server', key = 'bagLowerWorth', label = 'Gain min. par sac', valueType = 'number', min = 0, max = 100000 },
     { source = 'config.server', key = 'bagUpperWorth', label = 'Gain max. par sac', valueType = 'number', min = 0, max = 100000 },
